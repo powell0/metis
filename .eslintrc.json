@@ -1,0 +1,30 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:all"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+		"quotes": ["error", "single"],
+        "quote-props": ["warn", "as-needed"],
+        "global-require": "off",
+        "no-trailing-spaces": ["warn", {"ignoreComments": true}],
+        "func-names": "off",
+        "padded-blocks": ["warn", "never"],
+        "space-before-function-paren": ["warn", "never"],
+        "function-call-argument-newline": "off",
+        "prefer-spread": "off",
+        "capitalized-comments": "off",
+        "max-len": ["warn", {"code": 120}]
+    }
+}
