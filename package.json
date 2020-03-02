@@ -8,7 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "test": "NODE_ENV=test lab -v -l",
+    "test-coverage": "nyc --reporter=lcov --reporter=text yarn test"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -17,12 +19,14 @@
     "@hapi/hapi": "^19.1.0"
   },
   "devDependencies": {
+    "@hapi/code": "^8.0.1",
     "@hapi/lab": "^22.0.3",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "nyc": "^15.0.0"
   }
 }

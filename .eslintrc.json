@@ -25,6 +25,16 @@
         "function-call-argument-newline": "off",
         "prefer-spread": "off",
         "capitalized-comments": "off",
-        "max-len": ["warn", {"code": 120}]
+        "max-len": ["warn", {"code": 120}],
+        "one-var": ["warn", "never"],
+        "no-magic-numbers": "off",
+        "id-length": "off",
+        "max-lines-per-function": "off",
+        "max-statements": "off",
+        "dot-location": ["warn", "property"],
+        "arrow-body-style": "off",
+        "newline-per-chained-call": "warn",
+        "max-params": "off",
+        "no-unused-vars": "warn"
     }
 }
